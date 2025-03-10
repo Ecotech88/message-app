@@ -9,7 +9,7 @@ const SideBar = () => {
       </div>
 
     
-      <div className='flex flex-1 overflow-y-auto p-3 border-b-2 md:w-full lg:w-auto hide-scrollbar'>
+      <div className='flex-col overflow-y-auto p-3 border-b-2 md:w-full lg:w-auto hide-scrollbar'>
         {Users.map((users, id) => (
           <div key={id} className="border-b-2 py-6 hover:bg-gray-100 cursor-pointer transition duration-100 flex items-start justify-between gap-4">
             <div className='flex items-center gap-5'>
