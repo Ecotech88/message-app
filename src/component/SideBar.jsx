@@ -3,7 +3,7 @@ import { Users } from '../constant/Data';
 
 const SideBar = () => {
   return (
-    <div className='flex  flex-col justify-between min-w-[500px] border-yellow-50 max-h-screen border-r-2 shadow-2xl md:w-full lg:flex-1 relative'>
+    <div className='flex-col justify-between min-w-[500px] border-yellow-50 max-h-screen border-r-2 shadow-2xl md:w-full lg:flex-1 relative'>
 <div className="p-4 flex justify-between items-center">
         <img className='shadow-lg shadow-gray-600 w-8 bg-white border-none rounded-full p-1 cursor-pointer' src={backIcon} alt="" />
       </div>
