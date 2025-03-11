@@ -3,7 +3,7 @@ import Chats from './Chats.jsx'
 
 const MessageTab = () => {
   return (
-    <div className='flex justify-items-start max-w-full h-screen overflow-hidden '>
+    <div className='flex items-center justify-center max-w-full max-h-screen overflow-hidden '>
         <SideBar/>
         <Chats/>
     </div>
