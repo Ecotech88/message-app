@@ -1,5 +1,5 @@
 import backIcon from '../assets/arrow.png';
-import { Users } from '../constant/Data';
+qimport { Users } from '../constant/Data';
 
 const SideBar = () => {
   return (
@@ -9,9 +9,9 @@ const SideBar = () => {
       
 
     
-      <div className='flex-col max-w-full overflow-y-auto p-3 border-b-2 md:w-full lg:w-auto hide-scrollbar'>
+      <div className='flex-col items-center max-w-full overflow-y-auto p-5 border-b-2 md:w-full lg:w-auto hide-scrollbar'>
         {Users.map((users, id) => (
-          <div key={id} className="border-b-2 py-3 max-w-full hover:bg-gray-100 cursor-pointer transition duration-100 flex items-start justify-between gap-4">
+          <div key={id} className="border-b-2 py-3 hover:bg-gray-100 cursor-pointer transition duration-100 flex items-start justify-between gap-4">
             <div className='flex items-center gap-5'>
               <img className='size-12 object-cover rounded-full' src={users.images} alt="" />
               <div className='flex-col justify-center'>
