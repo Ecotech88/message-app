@@ -3,13 +3,14 @@ qimport { Users } from '../constant/Data';
 
 const SideBar = () => {
   return (
-    <div className='flex-col justify-between min-w-[500px] border-yellow-50 max-h-screen border-r-2 shadow-2xl sm:w-full lg:flex-1 relative'>
+    <div className='flex-col min-w-[500px] border border-yellow-50 h-screen border-r-2 
+      relatively shadow-2xl sm:w-full lg:flex-1'>
 
-        <img className='shadow-lg shadow-gray-600 w-8 bg-white border-none rounded-full p-1 cursor-pointer' src={backIcon} alt="" />
+        <img className='shadow-lg shadow-gray-600 w-8 bg-white border-none rounded-full p-1 my-4 cursor-pointer' src={backIcon} alt="" />
       
 
     
-      <div className='flex-col items-center max-w-full overflow-y-auto p-5 border-b-2 md:w-full lg:w-auto hide-scrollbar'>
+      <div className='flex-col items-center max-w-full overflow-y-auto px-5 border-b-2 md:w-full lg:w-auto hide-scrollbar'>
         {Users.map((users, id) => (
           <div key={id} className="border-b-2 py-3 hover:bg-gray-100 cursor-pointer transition duration-100 flex items-start justify-between gap-4">
             <div className='flex items-center gap-5'>
@@ -29,7 +30,7 @@ const SideBar = () => {
      
 
          <div className='
-          w-full mx-auto
+          w-full mx-auto absolutely button-4 
          md:w-full  bg-white   border-red-700 border-2 m-4 rounded-lg shadow-sm  
            shadow-red-400 p-4 bg-red-200/20'>
        
