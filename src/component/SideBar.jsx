@@ -9,14 +9,14 @@ const SideBar = () => {
       </div>
 
     
-      <div className='sm:flex-1 max-w-full overflow-y-auto p-3 border-b-2 md:w-full lg:w-auto hide-scrollbar'>
+      <div className='flex-col max-w-full overflow-y-auto p-3 border-b-2 md:w-full lg:w-auto hide-scrollbar'>
         {Users.map((users, id) => (
           <div key={id} className="border-b-2 py-3 hover:bg-gray-100 cursor-pointer transition duration-100 flex items-start justify-between gap-4">
             <div className='flex items-center gap-5'>
               <img className='size-12 object-cover rounded-full' src={users.images} alt="" />
               <div className='flex-col justify-center'>
                 <h2 className='font-bold text-sm'>{users.name}</h2>
-                <p className='text-xs '>{users.greeting}</p>
+                <p className='text-xs text-gray-400'>{users.greeting}</p>
               </div>
             </div>
             <span className="bg-purple-500 rounded-full px-1 text-white text-8 text-center my-2 font-thin">
